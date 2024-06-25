@@ -8,11 +8,7 @@ export const FREQUENCY_OPTION = {
   yearly: 'YEARLY',
 };
 
-export const App = ({
-  // interval,
-  // frequency,
-  // dispatch,
-}) => {
+export const App = () => {
   const [frequency, setfrequency] = useState(FREQUENCY_OPTION['daily'])
 
   return (
@@ -28,13 +24,6 @@ export const App = ({
             type="number"
             name="interval"
             id="interval"
-            // value={String(interval)}
-            // onChange={({ target }) =>
-            //   dispatch({
-            //     type: 'INTERVAL_CHANGE',
-            //     payload: Number(target.value),
-            //   })
-            // }
             className="placeholder-gray focus:border-orange-hank border-gray-lightest w-16 rounded-md border bg-white px-4 py-3 text-center text-sm font-normal text-black focus:outline-none disabled:cursor-not-allowed sm:w-20 sm:text-xl"
           />
         </label>
